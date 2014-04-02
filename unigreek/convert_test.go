@@ -15,6 +15,8 @@ var TestStrings = [][2]string{
 	[2]string{"[*)axilh=os] ", "[Ἀχιλῆος] "},
 	[2]string{"tw=|", "τῷ"},
 	[2]string{"*t*w=|", "Τῼ͂"},
+	[2]string{"ss", "σς"},
+	[2]string{"ss ss", "σς σς"},
 }
 
 func TestConvert(t *testing.T) {
