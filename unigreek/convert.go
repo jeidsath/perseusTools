@@ -41,13 +41,15 @@ var greekUnicode = map[rune]rune{
 }
 
 var markUnicodeInt = map[rune]int{
-	'\\': 768, // Grave
-	'/':  769, // Acute
-	'+':  776, // Diaeresis
-	')':  787, // Smooth breathing
-	'(':  788, // Rough breathing
-	'=':  834, // Circumflex
-	'|':  837, // Iota subscript
+	'\\': 768, // Grave ὶ
+	'/':  769, // Acute ί
+	'+':  776, // Diaeresis ϊ
+	')':  787, // Smooth breathing ἰ
+	'(':  788, // Rough breathing ἱ
+	'=':  834, // Circumflex ῖ
+	'|':  837, // Iota subscript ᾳ
+	//'':  , // Breve ῐ
+	//'':  , // Macron ῑ
 }
 
 func unicodeIToS(ii int) string {
