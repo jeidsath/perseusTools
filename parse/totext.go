@@ -37,7 +37,7 @@ func (ee *Element) lookupStrings(locations map[string]string) (map[string]string
 		if err != nil {
 			return map[string]string{}, err
 		}
-		output[kk] = cd.Content
+		output[kk] = trim(cd.Content)
 	}
 	return output, nil
 }
